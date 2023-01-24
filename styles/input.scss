@@ -1,0 +1,486 @@
+/* RESET CSS*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* VARIABLES*/
+
+$primary-color: #191826;
+$border-radius: .75rem;
+
+/* UNIVERSAL SELECTOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE */
+
+body {
+    background: left 30vw top -150px / contain no-repeat url('../assets/bg-main-mobile.png');
+    min-height: 100vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Header */
+
+header {
+    padding: 1.5rem;
+    width: 100%;
+
+    .logo {
+        width: 145px;
+        margin-top: 1rem;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .header {
+        h1 {
+            color: $primary-color;
+            line-height: 3rem;
+            letter-spacing: .45px;
+            margin: 3.75rem 0 1.25rem 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.625rem;
+            color: $primary-color;
+
+        }
+    }
+}
+
+/* Content */
+
+main {
+    width: 100%;
+    min-height: 1044px;
+    margin-top: 4rem;
+    position: relative;
+    padding-top: 6rem;
+
+    .illustration {
+        height: 600px;
+        border-radius: $border-radius;
+        background-image: url('../assets/bg-pattern-2.svg');
+        background-repeat: no-repeat;
+        background-position: top 0 center;
+        background-size: 280px;
+        background-color: $primary-color;
+
+        div {
+            width: 210px;
+            top: 0px;
+            left: 21%;
+            position: absolute;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .offer {
+        background-color: #FA7453;
+        color: whitesmoke;
+        padding: 3rem 2.25rem;
+        border-radius: $border-radius;
+        position: absolute;
+        bottom: 0px;
+
+        .offer__title {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            font-weight: bold;
+        }
+
+        .offer__desc {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            margin: .75rem 0 2.25rem 0;
+        }
+
+        .offer__price {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .offer__price>span:first-child {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .offer__price>span:nth-child(2) {
+            align-self: center;
+            margin-left: 1rem;
+            font-size: 1.25rem;
+            letter-spacing: -0.2px;
+        }
+
+        .offer__buttons {
+            a {
+                display: block;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.125rem;
+                line-height: 2rem;
+                letter-spacing: -0.18px;
+                text-align: center;
+                padding: 0.9rem 0;
+                border-radius: $border-radius;
+
+                img {
+                    vertical-align: middle;
+                    margin-right: 6px;
+                }
+            }
+
+            .offer__buttons-ios {
+                background-color: black;
+                color: white;
+                margin-bottom: 1rem;
+            }
+
+            .offer__buttons-and {
+                background-color: white;
+                color: black;
+            }
+        }
+
+
+    }
+}
+
+/* FOOTER */
+footer {
+    margin-top: 4rem;
+    padding: 0 1.5rem;
+
+    p {
+        margin-top: 2rem;
+        font-size: 1rem;
+        line-height: 1.625rem;
+
+        span {
+            font-weight: 700;
+            display: block;
+        }
+    }
+
+    .social__media {
+        margin-top: 4rem;
+
+        a {
+            display: inline-block;
+            margin-right: 1.25rem;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background: top 0 left 0 / 100vw no-repeat url("../assets/bg-main-tablet.png"),
+            top -2rem right -2.25rem / 267px no-repeat url("../assets/bg-pattern-1.svg");
+        ;
+    }
+
+    /* HEADER*/
+    header {
+        .header {
+            margin-top: 6rem;
+            max-width: 520px;
+
+            h1 {
+                font-size: 4rem;
+                line-height: 4rem;
+                letter-spacing: -0.73px;
+                margin-bottom: 1.75rem;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+
+            }
+        }
+    }
+
+    /* CONTENT*/
+    main {
+        min-height: 865px;
+        padding-top: 8rem;
+
+        .illustration {
+            margin-left: 4rem;
+            padding-left: 4rem;
+            background-position: top -2rem center;
+
+            div {
+                width: 270px;
+                left: 17%;
+            }
+        }
+
+        .offer {
+            right: 4rem;
+            top: 19rem;
+            bottom: auto;
+            width: 400px;
+            padding: 3rem;
+        }
+    }
+
+    /* FOOTER*/
+    footer {
+        display: flex;
+        margin-bottom: 5rem;
+
+        div {
+            flex: 1;
+        }
+
+        .social__media {
+            align-self: flex-end;
+            text-align: right;
+            margin-bottom: 2rem;
+        }
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    body {
+        background: center / cover no-repeat url("../assets/bg-main-desktop.png"),
+            top -2.5rem right 0 / 312px no-repeat url("../assets/bg-pattern-1.svg");
+        ;
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+    header {
+        .header {
+            max-width: 1015px;
+
+            h1 {
+                font-size: 5.5rem;
+                line-height: 5.5rem;
+                letter-spacing: -1px;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 2rem;
+                width: 80%;
+            }
+        }
+    }
+
+    /* CONTENT */
+    main {
+        margin: 6rem auto;
+
+        .illustration {
+            margin-left: 0;
+        }
+    }
+
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+        margin: 5.5rem auto;
+
+        div {
+            flex: 1;
+            margin-top: 0;
+        }
+
+        .rights {
+            display: flex;
+            flex: 4;
+
+            div {
+                flex: 1;
+            }
+
+            p {
+                flex: 2;
+
+                span {
+                    display: inline;
+                }
+            }
+
+            .rights__text {
+                margin-top: 0;
+            }
+        }
+
+
+        .social__media {
+            margin-top: 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.25rem;
+
+            a {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
