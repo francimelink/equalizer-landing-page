@@ -287,6 +287,14 @@ main {
                 background-color: white;
                 color: black;
             }
+
+            .offer__buttons-ios:hover {
+                background-color: #66E2DC;
+            }
+
+            .offer__buttons-and:hover {
+                background-color: #FFB964;
+            }
         }
 
 
@@ -315,6 +323,10 @@ footer {
         a {
             display: inline-block;
             margin-right: 1.25rem;
+        }
+
+        a:hover {
+            filter: invert(55%) sepia(100%) saturate(4);
         }
     }
 }
@@ -482,5 +494,12 @@ footer {
             }
         }
     }
+
+    /* ACTIVE STATES */
+
+    a:hover {
+        cursor: pointer;
+    }
+
 
 }

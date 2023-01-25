@@ -231,6 +231,10 @@ main {
     main .offer .offer__buttons .offer__buttons-and {
       background-color: white;
       color: black; }
+    main .offer .offer__buttons .offer__buttons-ios:hover {
+      background-color: #66E2DC; }
+    main .offer .offer__buttons .offer__buttons-and:hover {
+      background-color: #FFB964; }
 
 /* FOOTER */
 footer {
@@ -248,6 +252,8 @@ footer {
     footer .social__media a {
       display: inline-block;
       margin-right: 1.25rem; }
+    footer .social__media a:hover {
+      filter: invert(55%) sepia(100%) saturate(4); }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
@@ -351,6 +357,10 @@ footer {
       justify-content: flex-end;
       gap: 1.25rem; }
       footer .social__media a {
-        margin-right: 0; } }
+        margin-right: 0; }
+
+  /* ACTIVE STATES */
+  a:hover {
+    cursor: pointer; } }
 
 /*# sourceMappingURL=output.css.map */
